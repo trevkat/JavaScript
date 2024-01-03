@@ -1,7 +1,7 @@
 // If Statement:
 
-var youLikeMeat = true;
-var myNum = 10;
+// var youLikeMeat = true;
+// var myNum = 10;
 
 
 /*
@@ -29,7 +29,9 @@ if (myNum == 9) {
 
 // Else If statement:
 
-var myAge = 29;
+// var myAge = 29;
+
+/*
 
 if (myAge > 30) {
     
@@ -47,3 +49,31 @@ if (myAge > 30) {
     
     document.write("You are not over 10!");
 }
+
+*/
+
+// Logical Operators
+
+var myAge = 25;
+
+// AND operator 
+// if (myAge >= 18 && myAge <= 30){
+    
+// OR operator
+// if (myAge < 18 || myAge >30){
+
+// Multple operators
+// if (myAge < 18 || myAge >30 || myAge === 25){
+       
+    document.write("You can come to the party");
+    
+} else{
+    
+    document.write("You cannot come to the party");
+}
+
+
+
+
+
+
