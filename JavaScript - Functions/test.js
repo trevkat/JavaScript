@@ -6,6 +6,6 @@ function getAverage (a,b){
     
 }
 
-var myResult = getAverage(7,12);  //pass in numbers for a,b  -This is also a Global Variable which can be used anywhere
+var myResult = getAverage(7,12);  //pass in numbers for a,b  -This is also a Global Variable which can be called anywhere
 
 console.log("the average is " + myResult);
