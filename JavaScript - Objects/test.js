@@ -48,3 +48,69 @@ var myCar3 = {
 };
 
 myCar3.drive(75, 3) // Add the parameter for speed and time when calling the myCar3 object
+
+// This keyword - refers to whatever object owns that space
+
+console.log(this); // Will refer to the current window
+
+var myCar4 = {
+    
+    maxSpeed: 80, 
+    driver: "Susie", 
+    drive: function(speed, time){  // Create a function with parameters for speed and time to calculate distance traveled
+        console.log(speed * time); // Console log speed * time
+    },
+    test: function(){
+        console.log(this);
+    }
+};
+
+myCar4.test() // This in this fuction is owned by the myCar4 object which is why it logs the myCar4 object to the console.
+
+
+var myCar5 = {
+    
+    maxSpeed: 100, 
+    driver: "Steve", 
+    drive: function(speed, time){  // Create a function with parameters for speed and time to calculate distance traveled
+        console.log(speed * time); // Console log speed * time
+    },
+    test: function(){
+        console.log(this); // myCar5 could be used as a parameter. However, This makes more sense if repeating this code and not having to correct the parameter each time. 
+    }
+};
+
+myCar5.test() // Same as above. Logs both objects with This keyword.
+
+
+var myCar6 = {
+    
+    maxSpeed: 20, 
+    driver: "Joe", 
+    drive: function(speed, time){  // Create a function with parameters for speed and time to calculate distance traveled
+        console.log(speed * time); // Console log speed * time
+    },
+    logDriver: function(){
+        console.log("driver name is " + this.driver) // this is owned by the myCar6 driver so myCar6.driver would also work here. this is better for reuseable code.
+    }
+};
+
+myCar6.logDriver() // driver name is joe
+
+// Constructor Function - What if you wanted to create several of the same objects
+// The Constructor Function is just a function that creates an object
+
+//Examples
+
+var myArray = new Array(); //Creates a new blank array object. Array() calls the Array constructor function to create that object
+var myString = new String(); //Same as above
+
+// var myCar = new Car(); We can use the constructor function to create Car objects for us as many times as we want
+
+// See this being tested in the constructor function html and js files
+
+
+
+
+
+
