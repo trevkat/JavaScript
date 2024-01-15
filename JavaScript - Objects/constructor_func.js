@@ -26,3 +26,34 @@ console.log(myCar2);
 console.log(myCar3);
 console.log(myCar4);
 console.log(myCar5);
+
+// Date Object - used to create dynamic dates or store previous/future dates
+
+var myDate = new Date();
+console.log(myDate); // Logs current date and time - refreshing keeps updating to current DATE.
+
+// Jan is 0, Feb is 1, etc - year, month, day, hour, min, second
+var myPastDate = new Date(1980, 1, 25, 10, 30, 15);
+console.log(myPastDate);
+
+var myFutureDate = new Date(2015, 0, 25);
+console.log(myFutureDate);
+
+var susieBirthday = new Date(1984, 8, 1);
+var myBirthday = new Date(1980, 1, 25);
+console.log(myBirthday);
+
+console.log(myBirthday.getFullYear());
+
+console.log(myBirthday.getDate());
+
+console.log(myBirthday.getDay());
+
+// if else comparing dates
+if(myBirthday == susieBirthday){
+
+    console.log("birthdays are no equal");
+}else{
+
+    console.log("birthdays are not equal");
+}
