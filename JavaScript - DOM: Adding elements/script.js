@@ -1,4 +1,4 @@
-// Adding new elements via the DOM
+// Adding new elements to the DOM
 
 // Create a new LI element
 var newLi = document.createElement("li");
